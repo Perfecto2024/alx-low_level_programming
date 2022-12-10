@@ -1,28 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - entry point
+ * Description: print alphabets
+ * Return: 0
  */
-
 int main(void)
 {
-	int d;
+	char c = 'a';
 
-	for (d = 0; d < 100; d++)
+	while (c <= 'z')
 	{
-		putchar((d / 10) + '0');
-		putchar((d % 10) + '0');
-		if (d != 99)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		putchar(c);
+		c++;
 	}
 	putchar('\n');
-
 	return (0);
 }
